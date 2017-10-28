@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:inputType="text"
+            app:met_checkCharactersCountAtBeginning="true"
+            app:met_clearButton="true"
+            app:met_maxCharacters="30"
+            app:met_minCharacters="5" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:inputType="textPassword"
+            app:met_checkCharactersCountAtBeginning="true"
+            app:met_clearButton="true"
+            app:met_minCharacters="8" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="50dp"
+        android:background="#005500"
+        android:text="Sign In" />
+
+
+
+
+</LinearLayout>
+
+
+
+
